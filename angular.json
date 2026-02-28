@@ -3,11 +3,12 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "CursoBigoteAngular": {
+    "AngularBasics": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "changeDetection": "OnPush"
         }
       },
       "root": "",
@@ -69,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "CursoBigoteAngular:build:production"
+              "buildTarget": "AngularBasics:build:production"
             },
             "development": {
-              "buildTarget": "CursoBigoteAngular:build:development"
+              "buildTarget": "AngularBasics:build:development"
             }
           },
           "defaultConfiguration": "development"
